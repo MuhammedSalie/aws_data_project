@@ -20,6 +20,13 @@ def lambda_handler(event, context):
         csv_obj = s3.get_object(Bucket=bucket, Key=key)
         df = pd.read_csv(csv_obj['Body'])
 
+        df.columns = (
+        df.columns
+          .str.strip()
+          .str.lower()
+          .str.replace(' ', '_')
+        )
+
         # Convert to Parquet in-memory
         table = pa.Table.from_pandas(df)
         out_buffer = BytesIO()

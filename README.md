@@ -1,6 +1,6 @@
 # Data Engineering Project 
 
-**Data Pipeline on AWS using Terraform** is an implementation of the data pipeline which consumes jobs from Indeed csv file and generates a AWS Quicksight dashboard for analysis.
+**Data Pipeline on AWS using Terraform** is an implementation of the data pipeline which consumes jobs from csv file and generates a AWS Quicksight dashboard for analysis.
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
@@ -11,7 +11,7 @@
 * [Prerequisites](#prerequisites)
 * [Running project](#running-project)
 * [Testing](#testing)
-* [Lessons learned](#Lessons learned)
+* [Lessons learned](#Lessons-learned)
 * [License](#license)
 * [Contact](#contact)
 
@@ -98,7 +98,9 @@ Test
 
 <!-- LESSONS LEARNED -->
 ## Lessons learned
-*** TBC
+***
+Lambda layers
+Athena parquet headers
 
 <!-- LICENSE -->
 ## License
