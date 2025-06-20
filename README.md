@@ -96,7 +96,7 @@ Test
   ]
 }
 
-<!-- LESSONS LEARNED -->
+<!-- LESSONS-LEARNED -->
 ## Lessons learned
 ***
 Lambda layers
