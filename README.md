@@ -32,7 +32,8 @@ This project provisions:
 - Athena Queries
 
 #### Data flow
-```[Upload RAW CSV file to S3]
+```
+[Upload RAW CSV file to S3]
         ↓
    (Triggers)
         ↓
