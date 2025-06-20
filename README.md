@@ -11,7 +11,7 @@
 * [Prerequisites](#prerequisites)
 * [Running project](#running-project)
 * [Testing](#testing)
-* [Lessons learned](#Lessons learned)
+* [Lessons learned](#Lessons-learned)
 * [License](#license)
 * [Contact](#contact)
 
@@ -96,8 +96,8 @@ Test
   ]
 }
 
-<!-- LESSONS LEARNED -->
-## Lessons learned
+<!-- LESSONS-LEARNED -->
+## Lessons-learned
 *** TBC
 
 <!-- LICENSE -->
