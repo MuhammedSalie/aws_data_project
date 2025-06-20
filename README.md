@@ -1,6 +1,6 @@
 # Data Engineering Project 
 
-**Data Pipeline on AWS using Terraform** is an implementation of the data pipeline which consumes jobs from csv file and generates a AWS Quicksight dashboard for analysis.
+**Data Pipeline on AWS using Terraform** is an implementation of the data pipeline which consumes jobs from csv file and generates AWS Athena queries using Lambda.
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
@@ -29,11 +29,11 @@ This project provisions:
 - Lambda ETL job that formats data and runs Athena query
 - IAM roles and permissions
 - Athena-ready Parquet output
-- AWS Quicksights report
+- Athena Queries
 
 #### Data flow
 [Upload RAW CSV file to S3]
-        |
+        ↓
    (Triggers)
         ↓
 [Lambda (Python ETL job)]
@@ -43,7 +43,7 @@ This project provisions:
         ↓
 [Processed Data in S3]
         ↓
-[Amazon QuickSight Dashboard]
+[Amazon Athena Queries]
 
 <!-- PREREQUISITES -->
 ## Prerequisites
@@ -80,7 +80,7 @@ terraform destroy
 <!-- TESTING -->
 ## Testing
 *** Test csv to parquet 
-Test
+```Test
 {
   "Records": [
     {
@@ -95,11 +95,13 @@ Test
     }
   ]
 }
+```
 
 <!-- LESSONS-LEARNED -->
 ## Lessons learned
 ***
 Lambda layers
+
 Athena parquet headers
 
 <!-- LICENSE -->
