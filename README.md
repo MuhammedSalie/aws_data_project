@@ -97,7 +97,7 @@ Test
 }
 
 <!-- LESSONS-LEARNED -->
-## Lessons-learned
+## Lessons learned
 *** TBC
 
 <!-- LICENSE -->
