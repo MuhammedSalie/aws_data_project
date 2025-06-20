@@ -1,6 +1,6 @@
 # Data Engineering Project 
 
-**Data Pipeline on AWS using Terraform** is an implementation of the data pipeline which consumes jobs from csv file and generates a AWS Quicksight dashboard for analysis.
+**Data Pipeline on AWS, implemented using Terraform, processes job data from a CSV file and generates an AWS QuickSight dashboard for analysis.
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
