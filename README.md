@@ -24,7 +24,8 @@
 <!-- HOW IT WORKS -->
 ## How it works
 This project provisions:
-- S3 bucket with 3 folders (raw + processed + scripts)
+- S3 bucket with 2 folders (raw + processed)
+- Athena database
 - Lambda ETL job that formats data and runs Athena query
 - IAM roles and permissions
 - Athena-ready Parquet output
@@ -59,22 +60,41 @@ Software required to run the project. Install:
 git clone <this-repo-url>
 cd aws_data_project
 ```
-2. Setup AWS
+2. Setup AWS Cli
 ```run
 aws config
 ```
-3. Initialize and apply Terraform:
+3. Zip Lambda packages
+cd lambda
+tar -a -c -f csv_to_parquet.zip csv_to_parquet.py
+
+4. Initialize and apply Terraform:
 ```run
 terraform init
 terraform apply
 ```
-4. Delete project infrastructure
+5. Delete project infrastructure
 ```run
 terraform destroy
 ```
 <!-- TESTING -->
 ## Testing
-*** TBC
+*** Test csv to parquet 
+Test
+{
+  "Records": [
+    {
+      "s3": {
+        "object": {
+          "key": "raw/dataset_Linkedin_LIX_data-engineer_938003.csv"
+        },
+        "bucket": {
+          "name": "etl-csv-{date}-data-bucket" # Rplace {date} in format YYYYMMDD
+        }
+      }
+    }
+  ]
+}
 
 <!-- LESSONS LEARNED -->
 ## Lessons learned
