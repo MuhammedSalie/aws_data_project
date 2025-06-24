@@ -101,7 +101,7 @@ terraform destroy
 
 <!-- LESSONS-LEARNED -->
 ## Lessons learned
-***
+
 Lambda layers
 
 Athena parquet headers
